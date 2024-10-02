@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('../node_modules/font-awesome/css/font-awesome.css');
 
+/* Estilização Geral*/
 * {
     margin: 0;
     padding: 0;
@@ -40,10 +41,103 @@ p {
     margin: 15px 0 20px 0;
 }
 
-
-
-
-
 body {
     width: 100%;
+}
+
+
+
+/* Estilização da Navegação*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.navigation li {
+    position: relative;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navigation li a:hover,
+.navigation li a.active {
+    color: #088178;
+}
+
+.navigation a.active::after,
+.navigation a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+
+
+
+/* Estilização Banner*/
+
+.banner {
+    background-image: url("img/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.banner h4 {
+    padding-bottom: 15px;
+}
+
+.banner h1 {
+    color: #088178;
+}
+
+.banner button {
+    background-image: url("img/button.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    
+    padding: 16px 40px 14px 50px;
+    border: 0;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.banner button a {
+    text-decoration: none;
+    color: #088178;
 }
