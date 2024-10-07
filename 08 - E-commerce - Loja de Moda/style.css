@@ -221,7 +221,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
 }
 
 .pro {
@@ -230,9 +229,180 @@ header {
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
 }
 
 .pro img {
     width: 100%;
     border-radius: 20px;
+}
+
+.pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.description span {
+    color: #0606063;
+    font-size: 12px;
+}
+
+.description h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.description i {
+    color: rgb(243, 181, 25);
+    font-size: 12px;
+}
+
+.description h4 {
+    padding-top: 7px;
+    color: #088178;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cart {
+    padding-top: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+/* Estilização da Section Repair Services*/
+
+
+.repair_services {
+    background-image: url(img/banner/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding: 50px 0 50px 0;
+}
+
+.repair_services h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.repair_services h4{
+    color: white;
+    font-size: 16px;
+}
+
+.repair_services button {
+    background-color: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.02s ease;
+}
+
+.repair_services button a {
+    color: #000;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.repair_services h2 span {
+    color: #ef3636;
+} 
+
+.repair_services button:hover {
+    background-color: #088178; 
+}
+
+.repair_services button a:hover {
+    color: #fff; 
+}
+
+
+/* Estilização da Section Crazy deals*/
+
+.sn-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner-box h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.banner-box h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.banner-box span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.banner-box button {
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    border: 1px solid #fff;
+    transition: 0.02s;
+}
+
+.banner-box button a{
+    text-decoration: none;
+     color: #fff;
+}
+
+.banner-box {
+    background-image: url(img/banner/b17.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 690px;
+    height: 50vh;
+    padding: 30px;
+}
+.banner-box2 {
+    background-image: url(img/banner/b10.jpg);
+}
+
+.banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
 }
